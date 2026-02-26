@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Mohammed Gowshik G | Web Developer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+      <ul>
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#skills">Skills</a>
+        </li>
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+        <li>
+          <a href="#experience">Internship</a>
+        </li>
+        <li>
+          <a href="#education">Education</a>
+        </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero">
+        <h1>Mohammed Gowshik G</h1>
+        <p>Web Developer | Java | SQL</p>
+        <div class="hero-btns">
+            <a href="#contact" class="btn primary">Hire Me</a>
+            <a href="./Mohammed Gowshik G.pdf" target="_blank" rel="noopener noreferrer" class="btn secondary">
+            View Resume</a>
+        </div>
+    </header>
+
+    <!-- About -->
+    <section id="about" class="section fade-up">
+        <h2 class="section-title">About Me</h2>
+
+        <p>Aspiring Web Developer skilled in building responsive and interactive web applications. Passionate about modern frontend technologies, clean code, and user-centric design. Always eager to learn and grow in a collaborative environment.</p>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section fade-up">
+        <h2 class="section-title">Skills</h2>
+
+        <div class="skills-grid">
+            <span>Java</span>
+            <span>SQL</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="section fade-up">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="project-card" onclick="openModal('weatherModal')">
+            <h3>Weather Web Application</h3>
+            <p>Responsive app showing real-time weather data.</p>
+        </div>
+        <div class="project-card" onclick="openModal('amazonModal')">
+            <h3>Amazon Clone Website</h3>
+            <p>Pixel-perfect Amazon homepage clone.</p>
+        </div>
+    </section>
+
+    <!-- Weather Project Modal -->
+    <div class="modal" id="weatherModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('weatherModal')">&times;</span>
+            <h3>Weather Web Application</h3>
+            <p>A responsive weather web application that fetches and displays real-time weather data using OpenWeather API.</p>
+            <ul>
+              <li>HTML, CSS, JavaScript</li>
+              <li>OpenWeather API</li>
+              <li>Live API integration</li>
+              <li>Responsive UI</li>
+            </ul>
+            <div class="modal-actions">
+                <a href="https://mohammedgowshik.github.io/Weather-WebApp/" target="_blank" class="modal-btn">
+                  <i class="fa-solid fa-eye"></i> Live Demo
+                </a>
+                <a href="https://github.com/MohammedGowshik/Weather-WebApp" target="_blank" class="modal-btn secondary-btn">
+                    <i class="fa-brands fa-github"></i> GitHub Code
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Amazon Clone Project Modal -->
+    <div class="modal" id="amazonModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('amazonModal')">&times;</span>
+            <h3>Amazon Clone Website</h3>
+            <p>A pixel-perfect clone of the Amazon homepage built using modern HTML and CSS techniques to replicate real-world UI.</p>
+            <ul>
+              <li>HTML, CSS</li>
+              <li>Flexbox & Grid</li>
+              <li>Responsive Layout</li>
+            </ul>
+            <div class="modal-actions">
+                <a href="https://mohammedgowshik.github.io/Amazon-HomePage-Clone/" target="_blank" class="modal-btn">
+                  <i class="fa-solid fa-eye"></i> Live Demo
+                </a>
+                <a href="https://github.com/MohammedGowshik/Amazon-HomePage-Clone" target="_blank" class="modal-btn secondary-btn">
+                    <i class="fa-brands fa-github"></i> GitHub Code
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Internship -->
+    <section id="experience" class="section fade-up">
+        <h2 class="section-title">Internship</h2>
+        <div class="timeline">
+            <div class="timeline-item internship-click" onclick="openModal('infosysModal')">
+                <h3>Infosys Springboard – Intern</h3>
+                <span>AI / ML</span>
+                <p>Developed an Image Captioning Web Application using deep learning models and web deployment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Infosys Internship Modal -->
+    <div class="modal" id="infosysModal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('infosysModal')">&times;</span>
+            <h3>Image Captioning Web Application</h3>
+            <p>An AI-based web application that generates captions for uploaded images using deep learning models. Built and deployed during Infosys Springboard Internship.</p>
+            <ul>
+              <li>Python</li>
+              <li>Deep Learning</li>
+              <li>Hugging Face Models</li>
+              <li>Streamlit</li>
+              <li>GPU Acceleration</li>
+            </ul>
+            <div class="modal-actions">
+                <a href="https://infosisimagecaptioning.streamlit.app/" target="_blank" class="modal-btn">
+                  <i class="fa-solid fa-eye"></i> Live Demo
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <section id="education" class="section fade-up">
+        <h2 class="section-title">Education</h2>
+
+        <div class="edu-card">
+          <h3>B.E. Computer Science and Engineering</h3>
+          <p>Mahendra Engineering College</p>
+          <span>2021 – 2025 | CGPA: 7.60</span>
+        </div>
+        <div class="edu-card">
+          <h3>Higher Secondary</h3>
+          <p>Tagore Matric Higher Secondary School</p>
+          <span>2020 – 2021 | 75%</span>
+        </div>
+        <div class="edu-card">
+          <h3>SSLC</h3>
+          <p>Tagore Matric Higher Secondary School</p>
+          <span>2018 – 2019 | 69%</span>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section fade-up contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact-grid">
+          <a href="mailto:gowshik1104@gmail.com" class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <span>Email</span>
+          </a>
+          <a href="tel:9345474636" class="contact-card">
+            <i class="fa-solid fa-phone"></i>
+            <span>Phone</span>
+          </a>
+          <a href="https://linkedin.com/in/mohammed-gowshik-529095253" target="_blank" class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/MohammedGowshik" target="_blank" class="contact-card">
+            <i class="fa-brands fa-github"></i>
+            <span>GitHub</span>
+          </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 Mohammed Gowshik G</p>
+    </footer>
+
+    <!-- Script -->
+    <script>
+        function openModal(id) {
+            document.getElementById(id).style.display = "flex";
+        }
+        function closeModal(id) {
+            document.getElementById(id).style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
